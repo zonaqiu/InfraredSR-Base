@@ -1,0 +1,13 @@
+python main.py --template HAN \
+               --data_test Set20 \
+               --scale 4 \
+               --pre_train ../experiment/HANx4/model/model_390.pt \
+               --test_only \
+               --save HAN_test \
+               --save_results \
+               --data_range 801-900 \
+               --patch_size 160 \
+               --n_feats 64 \
+               --n_colors 1 \
+               --n_resblocks 20 \
+               --n_resgroups 10 \
